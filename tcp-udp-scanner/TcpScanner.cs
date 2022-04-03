@@ -17,6 +17,7 @@ public class TcpScanner
             {
                 using var tcp = new TcpClient();
                 tcp.ReceiveTimeout = 2000;
+                tcp.SendTimeout = 2000;
                 try
                 {
                     await tcp.ConnectAsync(ip, temp);
