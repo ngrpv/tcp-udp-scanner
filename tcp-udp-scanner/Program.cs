@@ -49,6 +49,9 @@ else
     UdpScanner.ScanIp(ipAddress, from, to);
 }
 
+Console.WriteLine("Press any key to exit...");
+Console.ReadKey();
+
 int ParseFromConsole(string message, int min, int max)
 {
     do

@@ -16,7 +16,7 @@ public class TcpScanner
             tasks.Add(Task.Run(async () =>
             {
                 using var tcp = new TcpClient();
-                tcp.ReceiveTimeout = 3000;
+                tcp.ReceiveTimeout = 2000;
                 try
                 {
                     await tcp.ConnectAsync(ip, temp);
